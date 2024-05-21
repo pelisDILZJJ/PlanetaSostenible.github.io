@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:justify;
+	margin:0;
+	padding:0;
+}
+
+header{
+	padding:80px;
+	background-image:url(../../Pictures/Medio%20Ambiente.png);
+	background-position:cover;
+	text-align:center;
+	color:#620;
+}
+
+nav{
+	background-color:#060;
+	display:flex;
+	flex-direction:row;
+}
+
+.menu{
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+}
+
+.menu > li >a{
+	display:block;
+	padding:15px 20px;
+	color:#FC9;
+	text-decoration:none;
+}
+
+.menu > li:hover{
+	background-color:#360;
+}
+
+.menu2{
+	position:absolute;
+	display:none;
+	list-style:none;
+	width:auto;
+	background-color: rgba(0,0,0,.5);
+}
+
+.menu li:hover .menu2{
+	display:block;
+}
+
+.menu2 li:hover{
+	background-color:#360;
+}
+
+.menu2 li a{
+	display:block;
+	color:#FC9;
+	padding:20px 30px;
+	text-decoration:none;
+}
+
+.seccion1{
+    display:flex;
+	flex-wrap:wrap;
+}
+
+section{
+	flex:50%;
+	padding:30px;
+	background-color:#693;
+	margin:20px;
+}
+
+section{
+	padding:30px;
+	flex:50%;
+}
+
+.barra{
+	flex:50px;
+	padding:10px;
+	float:right;
+}
+
+.galeria{
+	width:1280px;
+	height:auto;
+	margin:50px auto 0;
+	overflow:hidden;
+}
+
+.galeria ul{
+	display:flex;
+	padding:0;
+	width:400%;
+	animation:slide 20s infinite alternate ease-in-out;
+}
+
+.galeria li{
+	width:100%;
+	list-style:none;
+	position:relative;
+}
+
+.galeria img{
+	width:100%;
+}
+
+footer{
+	text-align:center;
+	background-color:#060;
+	padding:10px;
+	color:#FC9;
+}
+
+@keyframes slide{
+	0%{margin-left:0;}
+	20%{margin-left:0;}
+	
+	25%{margin-left:-100%;}
+	45%{margin-left:-100%;}
+	
+	50%{margin-left:-200%;}
+	70%{margin-left:-200%;}
+	
+	75%{margin-left:-300%;}
+	100%{margin-left:-300%;}
+}
+
+@media screen and (max-width: 700px){
+nav,.container{
+flex-direction: column;
+}
+}
